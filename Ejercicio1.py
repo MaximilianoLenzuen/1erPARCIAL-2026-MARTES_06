@@ -8,6 +8,7 @@ class Pokemon:
         else:
             self.nivel = 1
             print("Nivel Invalido, se defaultea a 1 para no lanzar excepcion")
+            #Sé que es mala práctica poner lógica en un constructor, pero al no tener lugar donde instanciar un pokemon y arrojar la excepción correspondiente, decidí ir por este camino
 
     def subir_nivel(self):
         if self.nivel < 100:
